@@ -26,3 +26,4 @@ menuOverlay.onclick = function() {
   menuOverlay.classList.toggle('active');
   document.body.classList.toggle('lock');
 }
+
