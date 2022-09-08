@@ -1,29 +1,28 @@
-//Меню бургер
+//Мобильное меню
+
 const menu = document.querySelector('.header__nav');
 const menuBtn = document.querySelector('.menu-btn');
-const menuLink = document.querySelectorAll('.header__link');
+const menuLinks = document.querySelectorAll('.header__link');
 const menuOverlay = document.querySelector('.menu-overlay');
 
- menuBtn.onclick = function() {
+function showMenu() {
   menu.classList.toggle('active');
   menuBtn.classList.toggle('active');
   menuOverlay.classList.toggle('active');
   document.body.classList.toggle('lock');
 };
 
-for(let i = menuLink.length; i--;) {
-  menuLink[i].onclick = function() {
-    menu.classList.toggle('active');
-    menuBtn.classList.toggle('active');
-    menuOverlay.classList.toggle('active');
-    document.body.classList.toggle('lock');
-  }
-}
+menuBtn.onclick = function() {
+  showMenu();
+};
 
 menuOverlay.onclick = function() {
-  menu.classList.toggle('active');
-  menuBtn.classList.toggle('active');
-  menuOverlay.classList.toggle('active');
-  document.body.classList.toggle('lock');
-}
+ showMenu();
+};
+
+for (const link of menuLinks) {
+  link.onclick = function() {
+    showMenu();
+  };
+};
 

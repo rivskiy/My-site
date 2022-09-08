@@ -251,7 +251,7 @@ a {
   z-index: 5;
 
   display: none;
-  width: 50px;
+  width: 70px;
   height: 50px;
   padding: 0;
 
@@ -266,10 +266,9 @@ a {
 .menu-btn span {
   position: absolute;
   right: 0;
-  height: 4%;
-  width: 80%;
+  height: 3px;
+  width: 50%;
 
-  transition: all 0.3s ease 0s;
   background-color: var(--accent-color);
 }
 
@@ -279,32 +278,38 @@ a {
 }
 
 .menu-btn::before {
-  top: 70%;
+  top: 20%;
+  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
 }
 
 .menu-btn::after {
-  bottom: 70%;
+  top: 80%;
+  transition: top 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+  transform: rotate(0deg);
 }
 
 .menu-btn span {
   top: 50%;
-  transform: scale(1) translateY(-50%);
+  transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+  transform:  rotate(0deg);
 }
 
 .menu-btn.active span {
-  transform: scale(0) translateY(-50%);
+  transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transform: rotate(225deg);
 }
 
 .menu-btn.active::before {
+  opacity: 0;
   top: 50%;
-  transform: rotate(-45deg) translate(0px, -50%);
+  transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
 }
 
 .menu-btn.active::after {
-  bottom: 50%;
-  transform: rotate(45deg) translate(0px, 50%);
+  top: 50%;
+  transition: top 0.1s ease-out, transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+  transform: rotate(135deg);
 }
-
 
 @media (max-width: 768px) {
   .header__nav {
