@@ -1,5 +1,4 @@
 //Мобильное меню
-
 const menu = document.querySelector('.header__nav');
 const menuBtn = document.querySelector('.menu-btn');
 const menuLinks = document.querySelectorAll('.header__link');
@@ -12,17 +11,10 @@ function showMenu() {
   document.body.classList.toggle('lock');
 };
 
-menuBtn.onclick = function() {
-  showMenu();
-};
+menuBtn.addEventListener('click', showMenu);
 
-menuOverlay.onclick = function() {
- showMenu();
-};
+menuOverlay.addEventListener('click', showMenu);
 
 for (const link of menuLinks) {
-  link.onclick = function() {
-    showMenu();
-  };
+  link.addEventListener('click', showMenu);
 };
-
