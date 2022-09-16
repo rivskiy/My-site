@@ -10,8 +10,8 @@
   --title-color: #ccd6f6;
 
   --fz-title: 32px;
-  --fz-sub-title: 24px;
-  --fz-norm: 20px;
+  --fz-sub-title: 22px;
+  --fz-norm: 19px;
   --fz--small: 15px;
 
   --header-height: 100px;
@@ -514,6 +514,7 @@ a {
 }
 
 .card__img {
+  width: auto;
   opacity: 0.6;
 }
 
