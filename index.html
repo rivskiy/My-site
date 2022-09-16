@@ -43,10 +43,12 @@
           <h1 class="about__title">Привет, меня зовут</h1>
           <p class="about__name">Алексей.<br>Я фронтенд разработчик.</p>
           <p class="about__text">Начинающий фронтенд разработчик ;)<br>
-          Я самостоятельно обучаюсь и развиваю <span>hard &amp; soft skill'ы.</span> Постоянно расширяю арсенал инструментов для разработки, параллельно углубляясь в уже знакомые.
+            Я самостоятельно обучаюсь и развиваю <span>hard &amp; soft skill'ы.</span> Постоянно расширяю арсенал
+            инструментов для разработки, параллельно углубляясь в уже знакомые.
           </p>
           <div class="skill">
-            <p class="skill__title">В настоящее время я обладаю базовыми навыками основных <span>фронтенд-технологий</span>:</p>
+            <p class="skill__title">В настоящее время я обладаю базовыми навыками основных
+              <span>фронтенд-технологий</span>:</p>
             <ul class="skill__list">
               <li class="skill__item">HTML</li>
               <li class="skill__item">CSS</li>
@@ -128,14 +130,83 @@
       </ul>
     </section>
 
+    <section class="slider">
+      <div class="slider__sidebar">
+        <div style="background: linear-gradient(220.16deg, #ff016b -8%, #720059 138%)">
+          <h1>Zima Blue</h1>
+          <p>Love, death & robots</p>
+        </div>
+        <div style="background: linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%)">
+          <h1>Го в крестики нолики?</h1>
+          <p>правда, противника ищи сам<br> и два раза не кликай, а то все сломается</p>
+        </div>
+      </div>
+      <div class="slider__main-slide">
+        <div class="slider__item xo-game">
+          <div class="xo-game__container">
+            <div class="xo-game__area">
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+              <div class="xo-game__box"></div>
+            </div>
+          </div>
+          <div class="xo-game__modal-result">
+            <div class="xo-game__modal-overlay"></div>
+            <div class="xo-game__modal-window">
+              <div class="xo-game__content">победитель</div>
+              <div class="xo-game__btn-close btn">Новая игра</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item aim-game">
+          <div class="aim-game__screen">
+            <h1>Aim Training</h1>
+            <button class="aim-game__start btn" id="start" type="button">Начать игру</button>
+          </div>
+          <div class="aim-game__screen" id="time-list">
+            <h1>Выберите время</h1>
+            <ul class="aim-game__time-list">
+              <li>
+                <button class="aim-game__time-btn btn" data-time="10">10 сек</button>
+              </li>
+              <li>
+                <button class="aim-game__time-btn btn" data-time="20">20 сек</button>
+              </li>
+              <li>
+                <button class="aim-game__time-btn btn" data-time="30">30 сек</button>
+              </li>
+            </ul>
+          </div>
+          <div class="aim-game__screen">
+            <h3>Осталось <span id="time">00:00</span></h3>
+            <div class="aim-game__board" id="board"></div>
+            <button class="aim-game__new-btn btn" id="new" type="button">Новая игра</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider__control">
+        <button class="down-button">
+        </button>
+        <button class="up-button">
+        </button>
+      </div>
+    </section>
+
     <section class="contact" id="contact">
       <h2 class="contact__title title">Контакты</h2>
-      <p class="contact__text">Я нахожусь в активном поиске работы и хочу получить как можно больше опыта, будь то стажировка или некоммерческий проект. Буду рад с вами пообщаться!
+      <p class="contact__text">Я нахожусь в активном поиске работы и хочу получить как можно больше опыта, будь то
+        стажировка или некоммерческий проект. Буду рад с вами пообщаться!
       </p>
       <div class="contact__contacts">
-      <p>Телефон <a href="tel:+79155624764">+7 915 562 47 64</a></p>
-      <p>Почта <a href="mailto:pe4urin@yandex.ru">pe4urin@yandex.ru</a></p>
-    </div>
+        <p>Телефон <a href="tel:+79155624764">+7 915 562 47 64</a></p>
+        <p>Почта <a href="mailto:pe4urin@yandex.ru">pe4urin@yandex.ru</a></p>
+      </div>
     </section>
   </main>
 
@@ -174,7 +245,6 @@
       </div>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 
