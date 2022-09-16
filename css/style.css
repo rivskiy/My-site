@@ -600,7 +600,7 @@ a {
   transition: transform 0.5s ease-in-out;
 }
 
-.slider__sidebar div {
+.slider__sidebar li {
   height: 100%;
   width: 100%;
   display: flex;
@@ -675,6 +675,35 @@ a {
   border-bottom-right-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .interactive {
+  }
+  .slider__sidebar {
+    width: 15%;
+  }
+  .slider__main-slide {
+    left: 15%;
+    width: 85%;
+  }
+  .slider__control button {
+    left: 15%;
+  }
+  .slider__sidebar li {
+    flex-direction: row;
+    justify-content: space-around;
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+  }
+  .slider__text {
+    order: -1;
+  }
+}
+
+@media (max-width: 570px) {
+  .interactive {
+    display: none;
+  }
+}
 /*                    X O Game              */
 
 .xo-game,
