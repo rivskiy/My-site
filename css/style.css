@@ -119,6 +119,7 @@ a {
 
 .title {
   position: relative;
+  margin-bottom: 1.5em;
   color: var(--title-color);
   font-size: var(--fz-title);
 }
@@ -572,7 +573,11 @@ a {
   }
 }
 
-/*                    slider              */
+/*                    interactive-slider              */
+
+.interactive {
+  margin-bottom: var(--mg-section)
+}
 
 .slider {
   position: relative;
@@ -580,7 +585,7 @@ a {
   width: 100%;
   height: var(--slide-height)
 }
-.slider h1 {
+.slider__title {
   color: var(--title-color);
   font-size: var(--fz-title);
 }
@@ -602,7 +607,11 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
+}
+
+.slider__text {
+  padding: 0 10px;
+  color: var(--text-color-light);
 }
 
 .slider__main-slide {
@@ -618,6 +627,13 @@ a {
   overflow: hidden;
   height: 100%;
   width: 100%;
+}
+
+.slider__item__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--opacity-bg);
+  backdrop-filter: blur(5px);
 }
 
 .slider__control button {
@@ -661,7 +677,10 @@ a {
 
 /*                    X O Game              */
 
-
+.xo-game,
+.xo-game-sidebar {
+  background: linear-gradient(221.87deg, #8308EA 1%, #2c005f 128%);
+}
 .xo-game__container{
   width: 100%;
   height: 100%;
@@ -735,6 +754,10 @@ a {
 
 /*                    AIMGame             */
 
+.aim-game,
+.aim-game-sidebar {
+  background: linear-gradient(220.16deg, #ff016b -8%, #720059 138%);
+}
 
 .aim-game__screen {
   position: relative;

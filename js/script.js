@@ -168,11 +168,11 @@ board.addEventListener('click', event => {
         createRandomCircle();
     };
 });
-/*
+
 newBtn.addEventListener('click', (event) => {
   location.reload();
 })
-*/
+
 function startGame() {
     setInterval(decreeseTime, 1000);
     createRandomCircle();

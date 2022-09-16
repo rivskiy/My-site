@@ -48,7 +48,8 @@
           </p>
           <div class="skill">
             <p class="skill__title">В настоящее время я обладаю базовыми навыками основных
-              <span>фронтенд-технологий</span>:</p>
+              <span>фронтенд-технологий</span>:
+            </p>
             <ul class="skill__list">
               <li class="skill__item">HTML</li>
               <li class="skill__item">CSS</li>
@@ -130,71 +131,78 @@
       </ul>
     </section>
 
-    <section class="slider">
-      <div class="slider__sidebar">
-        <div style="background: linear-gradient(220.16deg, #ff016b -8%, #720059 138%)">
-          <h1>Zima Blue</h1>
-          <p>Love, death & robots</p>
+    <section class="interactive">
+      <h2 class="interactive__title title">Интерактив</h2>
+      <div class="slider">
+        <div class="slider__sidebar">
+          <div class="aim-game-sidebar">
+            <p class="slider__title">Aim Trainitg</p>
+            <p class="slider__text">Как пуля резкий</p>
+          </div>
+          <div class="xo-game-sidebar">
+            <p class="slider__title">Tic-Tac-Toe</p>
+            <p class="slider__text">Крестики ходят первыми</p>
+          </div>
         </div>
-        <div style="background: linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%)">
-          <h1>Го в крестики нолики?</h1>
-          <p>правда, противника ищи сам<br> и два раза не кликай, а то все сломается</p>
-        </div>
-      </div>
-      <div class="slider__main-slide">
-        <div class="slider__item xo-game">
-          <div class="xo-game__container">
-            <div class="xo-game__area">
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
-              <div class="xo-game__box"></div>
+        <div class="slider__main-slide">
+          <div class="slider__item xo-game">
+            <div class="slider__item__overlay">
+              <div class="xo-game__container">
+                <div class="xo-game__area">
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                  <div class="xo-game__box"></div>
+                </div>
+              </div>
+              <div class="xo-game__modal-result">
+                <div class="xo-game__modal-overlay"></div>
+                <div class="xo-game__modal-window">
+                  <div class="xo-game__content">победитель</div>
+                  <div class="xo-game__btn-close btn">Новая игра</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="xo-game__modal-result">
-            <div class="xo-game__modal-overlay"></div>
-            <div class="xo-game__modal-window">
-              <div class="xo-game__content">победитель</div>
-              <div class="xo-game__btn-close btn">Новая игра</div>
+          <div class="slider__item aim-game">
+
+            <div class="aim-game__screen slider__item__overlay">
+              <h1>Aim Training</h1>
+              <button class="aim-game__start btn" id="start" type="button">Начать игру</button>
             </div>
+            <div class="aim-game__screen slider__item__overlay" id="time-list">
+              <h1>Выберите время</h1>
+              <ul class="aim-game__time-list">
+                <li>
+                  <button class="aim-game__time-btn btn" data-time="10">10 сек</button>
+                </li>
+                <li>
+                  <button class="aim-game__time-btn btn" data-time="20">20 сек</button>
+                </li>
+                <li>
+                  <button class="aim-game__time-btn btn" data-time="30">30 сек</button>
+                </li>
+              </ul>
+            </div>
+            <div class="aim-game__screen slider__item__overlay">
+              <h3>Осталось <span id="time">00:00</span></h3>
+              <div class="aim-game__board" id="board"></div>
+              <button class="aim-game__new-btn btn" id="new" type="button">Новая игра</button>
+            </div>
+
           </div>
         </div>
-        <div class="slider__item aim-game">
-          <div class="aim-game__screen">
-            <h1>Aim Training</h1>
-            <button class="aim-game__start btn" id="start" type="button">Начать игру</button>
-          </div>
-          <div class="aim-game__screen" id="time-list">
-            <h1>Выберите время</h1>
-            <ul class="aim-game__time-list">
-              <li>
-                <button class="aim-game__time-btn btn" data-time="10">10 сек</button>
-              </li>
-              <li>
-                <button class="aim-game__time-btn btn" data-time="20">20 сек</button>
-              </li>
-              <li>
-                <button class="aim-game__time-btn btn" data-time="30">30 сек</button>
-              </li>
-            </ul>
-          </div>
-          <div class="aim-game__screen">
-            <h3>Осталось <span id="time">00:00</span></h3>
-            <div class="aim-game__board" id="board"></div>
-            <button class="aim-game__new-btn btn" id="new" type="button">Новая игра</button>
-          </div>
+        <div class="slider__control">
+          <button class="down-button">
+          </button>
+          <button class="up-button">
+          </button>
         </div>
-      </div>
-      <div class="slider__control">
-        <button class="down-button">
-        </button>
-        <button class="up-button">
-        </button>
       </div>
     </section>
 
