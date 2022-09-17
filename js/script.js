@@ -84,6 +84,7 @@ let result = '';
 area.addEventListener('click', e => {
     if (e.target.className === 'xo-game__box') {
         move % 2 === 0 ? e.target.innerHTML = 'X' : e.target.innerHTML = 'O';
+        e.target.classList.add('no-select');
         move++;
         check();
     };
