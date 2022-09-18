@@ -76,22 +76,37 @@ const contentContainer = document.querySelector('.xo-game__content');
 const modalResult = document.querySelector('.xo-game__modal-result');
 const overlay = document.querySelector('.xo-game__modal-overlay');
 const btnClose = document.querySelector('.xo-game__btn-close');
+const boxes = document.querySelectorAll('.xo-game__box');
 
 let move = 0;
-
 let result = '';
 
 area.addEventListener('click', e => {
     if (e.target.className === 'xo-game__box') {
-        move % 2 === 0 ? e.target.innerHTML = 'X' : e.target.innerHTML = 'O';
-        e.target.classList.add('no-select');
-        move++;
-        check();
+        if (move % 2 === 0) {
+          e.target.innerHTML = 'X'
+          e.target.classList.add('no-select');
+          move++;
+          check();
+          setTimeout(zeroStep, 500);
+        };
     };
 });
 
+function zeroStep() {
+  for (let i = 0; i < boxes.length; i++) {
+      let r = Math.floor(Math.random() * 9);
+      if (boxes[r].innerHTML !== 'X' && boxes[r].innerHTML !== 'O') {
+          boxes[r].innerHTML = 'O';
+          move++;
+          console.log(boxes[r]);
+          check();
+          break;
+      };
+  };
+};
+
 function check() {
-    const boxes = document.querySelectorAll('.xo-game__box');
     const arr = [
         [0, 1, 2],
         [3, 4, 5],
@@ -150,8 +165,8 @@ const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71']
 let time = 0;
 let score = 0;
 
-startBtn.addEventListener('click', (event) => {
-    screens[0].classList.add('up')
+startBtn.addEventListener('click', () => {
+    screens[0].classList.add('up');
 });
 
 timeList.addEventListener('click', event => {
@@ -170,9 +185,10 @@ board.addEventListener('click', event => {
     };
 });
 
-newBtn.addEventListener('click', (event) => {
-  location.reload();
-})
+newBtn.addEventListener('click', () => {
+ location.reload();
+});
+
 
 function startGame() {
     setInterval(decreeseTime, 1000);
