@@ -31,7 +31,7 @@
           <a class="header__link" href="#contact">Контакты</a>
         </li>
       </ul>
-      <a href="Печурин Алексей.pdf" class="header__resume-link btn" download title="Скачать Резюме">Резюме</a>
+      <a href="https://hh.ru/applicant/resumes/view?resume=e6f2a7cbff0b5b40fa0039ed1f6b786d506b79" class="header__resume-link btn" target="_blank">Резюме</a>
     </nav>
   </header>
 
@@ -52,10 +52,11 @@
             </p>
             <ul class="skill__list">
               <li class="skill__item">HTML</li>
-              <li class="skill__item">CSS</li>
+              <li class="skill__item">CSS (SCSS/SASS)</li>
               <li class="skill__item">JavaScript</li>
             </ul>
           </div>
+          <p class="about__text">А так же изучаю Vue.js и имею небольшой опыт с TailwindCss</p>
         </div>
         <img class="about__image" src="img/im.png">
       </div>
@@ -126,88 +127,51 @@
           </div>
           <p class="card__description">Верстка многостраничного сайта: БЭМ-разметка, SCSS</p>
           <p class="card__date">Сентябрь, 2022</p>
+
+        <li class="card-list__item card">
+          <a class="card__link-img" href="https://get-weather-1zr4.onrender.com/" target="_blank">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/cards/card-3-tablet.png">
+              <img class="card__img" src="img/cards/card-3.png" alt="Страница проекта" width="350" height="350">
+            </picture>
+          </a>
+          <div class="card__head">
+            <h3 class="card__title">Get-weather</h3>
+            <ul class="card__links links">
+              <li>
+                <a href="https://github.com/rivskiy/The-Weather" target="_blank">
+                  <svg class="links__icon icon">
+                    <use xlink:href="sprite.svg#git"></use>
+                  </svg>
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://get-weather-1zr4.onrender.com/" target="_blank">
+                  <svg class="links__icon icon">
+                    <use xlink:href="sprite.svg#link"></use>
+                  </svg>
+                  <span class="visually-hidden">Страница проекта</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="card__description">Vue приложение погоды: composition API, TailwindCss</p>
+          <p class="card__date">Май, 2023</p>
+        </li>
         </li>
         <li class="comment">Скоро проектов будет больше!</li>
       </ul>
     </section>
 
-    <section class="interactive">
-      <h2 class="interactive__title title">Интерактив</h2>
-      <div class="slider">
-        <ul class="slider__sidebar">
-          <li class="aim-game-sidebar">
-            <p class="slider__title">Aim Trainitg</p>
-            <p class="slider__text">Как пуля резкий</p>
-          </li>
-          <li class="xo-game-sidebar">
-            <p class="slider__title">Tic-Tac-Toe</p>
-            <p class="slider__text">Крестики ходят первыми</p>
-          </li>
-        </ul>
-        <ul class="slider__main-slide">
-          <li class="slider__item xo-game">
-            <div class="slider__item__overlay">
-              <div class="xo-game__container">
-                <div class="xo-game__area">
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                  <div class="xo-game__box"></div>
-                </div>
-              </div>
-              <div class="xo-game__modal-result">
-                <div class="xo-game__modal-overlay"></div>
-                <div class="xo-game__modal-window">
-                  <div class="xo-game__content">победитель</div>
-                  <div class="xo-game__btn-close btn">Новая игра</div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="slider__item aim-game">
-            <div class="aim-game__screen slider__item__overlay">
-              <h1>Aim Training</h1>
-              <button class="aim-game__start btn" id="start" type="button">Начать игру</button>
-            </div>
-            <div class="aim-game__screen slider__item__overlay" id="time-list">
-              <h1>Выберите время</h1>
-              <ul class="aim-game__time-list">
-                <li>
-                  <button class="aim-game__time-btn btn" data-time="10">10 сек</button>
-                </li>
-                <li>
-                  <button class="aim-game__time-btn btn" data-time="20">20 сек</button>
-                </li>
-                <li>
-                  <button class="aim-game__time-btn btn" data-time="30">30 сек</button>
-                </li>
-              </ul>
-            </div>
-            <div class="aim-game__screen slider__item__overlay">
-              <h3>Осталось <span id="time">00:00</span></h3>
-              <div class="aim-game__board" id="board"></div>
-              <button class="aim-game__new-btn btn" id="new" type="button">Новая игра</button>
-            </div>
-          </li>
-        </ul>
-        <div class="slider__control">
-          <button class="down-button"></button>
-          <button class="up-button"></button>
-        </div>
-      </div>
-    </section>
-
     <section class="contact" id="contact">
       <h2 class="contact__title title">Контакты</h2>
-      <p class="contact__text">Я нахожусь в активном поиске работы и хочу получить как можно больше опыта, будь то стажировка или некоммерческий проект. Буду рад с вами пообщаться!
+      <p class="contact__text">Я нахожусь в активном поиске работы и хочу получить как можно больше опыта, будь то
+        стажировка или некоммерческий проект. Буду рад с вами пообщаться!
       </p>
       <div class="contact__contacts">
         <p>Телефон <a href="tel:+79963074764">+7 996 307 47 64</a></p>
+        <p>Телеграм <a href="https://t.me/rivskiy">@rivskiy</a></p>
         <p>Почта <a href="mailto:pe4urin@yandex.ru">pe4urin@yandex.ru</a></p>
       </div>
     </section>
@@ -233,11 +197,11 @@
           </a>
         </li>
         <li class="social__item">
-          <a href="https://www.instagram.com/rivskiy/" target="_blank">
+          <a href="https://t.me/rivskiy" target="_blank">
             <svg class="social__icon icon">
-              <use xlink:href="sprite.svg#inst"></use>
+              <use xlink:href="sprite.svg#teleg"></use>
             </svg>
-            <span class="visually-hidden">instagram</span>
+            <span class="visually-hidden">telegram</span>
           </a>
         </li>
       </ul>
