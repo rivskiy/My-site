@@ -31,7 +31,8 @@
           <a class="header__link" href="#contact">Контакты</a>
         </li>
       </ul>
-      <a href="https://hh.ru/applicant/resumes/view?resume=e6f2a7cbff0b5b40fa0039ed1f6b786d506b79" class="header__resume-link btn" target="_blank">Резюме</a>
+      <a href="https://hh.ru/applicant/resumes/view?resume=e6f2a7cbff0b5b40fa0039ed1f6b786d506b79"
+        class="header__resume-link btn" target="_blank">Резюме</a>
     </nav>
   </header>
 
@@ -54,9 +55,9 @@
               <li class="skill__item">HTML</li>
               <li class="skill__item">CSS (SCSS/SASS)</li>
               <li class="skill__item">JavaScript</li>
+              <li class="skill__item">Vue.js (Vue Router, Vuex)</li>
             </ul>
           </div>
-          <p class="about__text">А так же изучаю Vue.js и имею небольшой опыт с TailwindCss</p>
         </div>
         <img class="about__image" src="img/im.png">
       </div>
@@ -125,14 +126,46 @@
               </li>
             </ul>
           </div>
-          <p class="card__description">Верстка многостраничного сайта: БЭМ-разметка, SCSS</p>
+          <p class="card__description">Верстка многостраничного сайта: БЭМ-разметка, SCSS, адаптив</p>
           <p class="card__date">Сентябрь, 2022</p>
+
+        <li class="card-list__item card">
+          <a class="card__link-img" href="https://notes-rr7j.onrender.com/#/" target="_blank">
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/cards/card-3-tablet.png">
+              <img class="card__img" src="img/cards/card-3.png" alt="Страница проекта" width="350" height="350">
+            </picture>
+          </a>
+          <div class="card__head">
+            <h3 class="card__title">Notes</h3>
+            <ul class="card__links links">
+              <li>
+                <a href="https://github.com/rivskiy/tocode-Notes-2" target="_blank">
+                  <svg class="links__icon icon">
+                    <use xlink:href="sprite.svg#git"></use>
+                  </svg>
+                  <span class="visually-hidden">Репозиторий проекта</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://notes-rr7j.onrender.com/#/" target="_blank">
+                  <svg class="links__icon icon">
+                    <use xlink:href="sprite.svg#link"></use>
+                  </svg>
+                  <span class="visually-hidden">Страница проекта</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="card__description">Приложение написано в ходе курса по Vue: Vue 3,Vuex, Vue Router</p>
+          <p class="card__date">Апрель, 2023</p>
+        </li>
 
         <li class="card-list__item card">
           <a class="card__link-img" href="https://get-weather-1zr4.onrender.com/" target="_blank">
             <picture>
-              <source media="(max-width: 768px)" srcset="img/cards/card-3-tablet.png">
-              <img class="card__img" src="img/cards/card-3.png" alt="Страница проекта" width="350" height="350">
+              <source media="(max-width: 768px)" srcset="img/cards/card-4-tablet.png">
+              <img class="card__img" src="img/cards/card-4.png" alt="Страница проекта" width="350" height="350">
             </picture>
           </a>
           <div class="card__head">
@@ -158,7 +191,6 @@
           </div>
           <p class="card__description">Vue приложение погоды: composition API, TailwindCss</p>
           <p class="card__date">Май, 2023</p>
-        </li>
         </li>
         <li class="comment">Скоро проектов будет больше!</li>
       </ul>

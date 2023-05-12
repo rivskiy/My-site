@@ -538,7 +538,7 @@ a {
 }
 
 .card__links {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   gap: var(--icon-gap);
 }
