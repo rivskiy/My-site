@@ -543,6 +543,9 @@ a {
   gap: var(--icon-gap);
 }
 
+.card__description span {
+  color: var(--accent-color);
+}
 .card__date {
   font-size: var(--fz--small);
 }
