@@ -9,7 +9,6 @@ function showMenu() {
   menu.classList.toggle('active');
   menuBtn.classList.toggle('active');
   menuOverlay.classList.toggle('active');
-  document.body.classList.toggle('lock');
 };
 
 menuBtn.addEventListener('click', showMenu);

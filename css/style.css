@@ -153,10 +153,6 @@ a {
   background-color: var(--main-bg);
 }
 
-.page__body.lock {
-  overflow: hidden;
-}
-
 /* полоса прокрутки (скроллбар) */
 
 * {
