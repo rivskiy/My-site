@@ -1,2 +1,3 @@
-## [Личный сайт-портфолио](https://rivskiy.github.io/pechurinaleksey/)
+## [Сайт-портфолио](https://rivskiy.github.io/pechurinaleksey/)
 
+---
