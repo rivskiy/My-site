@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   :root {
     --fz-sub-title: 18px;
     --fz-norm: 14px;
@@ -173,18 +173,17 @@ a {
   .title::after {
     top: 20px;
   }
+  .container {
+    padding: 0 5%;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   .title {
     text-align: center;
   }
   .title::after {
     display: none;
-  }
-
-  .container {
-    padding: 0 5%;
   }
 }
 
@@ -376,7 +375,7 @@ a {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   .header {
     padding: 0 25px;
   }
@@ -472,7 +471,7 @@ a {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   .about__title {
     margin-bottom: 0;
   }
@@ -481,14 +480,11 @@ a {
   }
 }
 
-@media (max-width: 450px) {}
-
 /*                    portfolio              */
 
 
 .portfolio {
   padding-top: var(--header-height);
-  margin-bottom: var(--mg-section);
 }
 
 .portfolio__title {
@@ -496,6 +492,8 @@ a {
 }
 
 .card-list {
+  margin-bottom: var(--mg-section);
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5%;
@@ -560,23 +558,34 @@ a {
 
 @media (max-width: 768px) {
   .card-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+
     gap: 2%;
   }
-  .comment {
-    margin-bottom: var(--mg-section);
+  /* .comment {
     display: inline;
     text-align: center;
-  }
+  } */
 }
 
+@media (max-width: 425px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .comment {
+    align-self: center;
+  }
+}
 
 /*                    contact              */
 
 
 
 .contact {
-  margin-bottom: var(--mg-section);
+  padding-top: var(--header-height);
 }
 
 .contact__text {
@@ -588,6 +597,8 @@ a {
   max-width: 50%;
   margin: 0 auto;
   padding: 20px 30px;
+  margin-bottom: var(--mg-section);
+
 
   text-align: center;
 
@@ -611,7 +622,7 @@ a {
 }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   .contact__text {
     text-align: center;
   }
@@ -634,7 +645,7 @@ a {
   gap: var(--icon-gap);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .social {
     position: fixed;
     left: 40px;
